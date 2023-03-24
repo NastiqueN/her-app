@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: start_conversation
+  steps:
+  - intent: start
+  - action: utter_start
+
+- story: ask for help
+  steps:
+  - intent: need_help
+  - action: utter_help
+
+- story: ask about events
+  steps:
+  - intent: events_when
+  - action: utter_events_when
+
+- story: ask how to participate
+  steps:
+  - intent: events_how
+  - action: utter_events_how
+
+- story: how to donate
+  steps:
+  - intent: donate
+  - action: utter_donate
+
+- story: organize charity events
+  steps:
+  - intent: charity_events
+  - action: utter_charity_events

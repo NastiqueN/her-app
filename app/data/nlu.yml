@@ -1,0 +1,179 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: start
+  examples: |
+    - /start
+    - start
+
+- intent: need_help
+  examples: |
+    - як отримати допомогу волонтерів
+    - мені потрібна допомога
+    - наші знайомі потребують допомоги
+    - як подати заявку на відбудову
+    - в нас пошкоджений будинок
+    - знищений будинок
+    - будинок згорів
+    - квартира знищена
+    - ми залишилися без житла
+    - нам ніде жити
+    - хочемо відбудувати будинок
+    - пошкодження даху
+    - згоріло все
+    - потребують допомоги мої сусіди
+    - необхідна допомога у відбудові зруйнованого після обстрілу будинку
+    - ми хочемо звернутися до волонтера
+    - нам потрібні волонтери
+
+- intent: events_when
+  examples: |
+    - коли відбуваються виїзди
+    - чи буде поїздка в цю суботу
+    - коли можна поїхати
+    - з подругою хочемо поїхати на виїзд
+    - волонтерський заїзд на вихідних
+    - недільний волонтер
+    - інформація про заїзди
+    - де дізнатися про заходи
+    - коли наступна зустріч
+    - які у вас є заходи
+    - коли будуть поїздки і куди
+    - як приєднатися до виїзду
+    - де можна читати про майбутні виїзди
+    - у які дні можна поїхати
+    - коли найближий виїзд
+    - анонси толок
+    - коли наступна толока
+
+- intent: events_how
+  examples: |
+    - як записатися на волонтерство
+    - хочемо до вас приєднатися
+    - як стати волонтером
+    - інформація про волонтерство
+    - ми з друзями хочемо допомогти
+    - ми хочемо допомагати як волонтери
+    - хочу бути волонтером
+    - як можна поїхати як волонтер
+    - чи потрібні вам волонтери
+    - як приєднатися
+    - як з вами поїхати
+    - хочу бути корисним поїхати працювати
+    - де можна зареєструватися як волонтер
+    - не знаю де реєструватися
+
+- intent: donate
+  examples: |
+    - як задонатити
+    - хочу зробити донат
+    - хочу скинути вам гроші
+    - як підтримати вас фінансово
+    - допомогти грошима
+    - дайте картку моно
+    - чи можна скинути гроші на монобанк
+    - куди донатити
+    - у вас є рахунок для допомоги
+    - реквізити для допомоги
+    - банківські реквізити
+
+- intent: charity_events
+  examples: |
+    - хочу робити благодійний захід для збору коштів на сміливих
+    - маю ідею збору коштів на підтримку
+    - кому написати з приводу збору коштів
+    - хочемо влаштувати благодійний збір
+    - анонс важливої події
+    - в мене є ідея як допомогти де можна про це написати
+    - як звʼязатися з вами для співпраці
+    - пропозиція колаборації
+

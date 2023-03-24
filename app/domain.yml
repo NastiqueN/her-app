@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - start
+  - need_help
+  - events_when
+  - events_how
+  - donate
+  - charity_events
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_start:
+  - text: "Привіт! Це бот «Сміливі відновлювати» — волонтерської ініціативи з відновлення міст і сіл після вторгнення окупантів.
+  \n\nНапиши, будь ласка, своє запитання"
+
+  utter_help:
+  - text: "Якщо вам потрібна допомога у відбудові або підготовці до неї, надішліть будь ласка вашу заявку через сайт. Ми зконтактуємо з вами, якщо наша допомога буде релевантною."
+
+  utter_events_when:
+  - text: "Великі волонтерські заїзди відбуваються щовихідних. А менші заїзди відбуваються за запитом у будні. Усю інформацію про заїзди можна знайти у нас в телеграм-каналі та чаті."
+
+  utter_events_how:
+  - text: "Аби стати Сміливим волонтером, ти маєш підписатися на наш телеграм канал +  чат. Анонси вихідних волонтерств відбуваються у четвер, після чого публікується опитування, через яке можна зареєструватися на конкретний день волонтерства. 
+\n\nАнонси будніх волонтерств відбувається за день-два до дня волонтерства. Реєстрація так само - через опитування в телеграмі. Після реєстрації координатор  надсилає вам деталі волонтерства в приватні повідомлення.
+\n\n!Під час першої реєстрації на волонтерcтво важливо ознайомитися з правилами безпеки та заповнити цю анкету."
+
+  utter_donate:
+  - text: "Задонатити на проект (https://send.monobank.ua/jar/33np84nugz)."
+
+  utter_charity_events:
+  - text: "Звучить супер, розкажи про свою ідею нашій координаторці  @alex_lucak в телеграмі."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
