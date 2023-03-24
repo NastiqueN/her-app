@@ -94,7 +94,7 @@ pytz-deprecation-shim==0.1.0.post0
 PyYAML==6.0
 questionary==1.10.0
 randomname==0.1.5
-rasa==3.4.6
+rasa==latest
 rasa-sdk==3.4.1
 redis==4.5.1
 regex==2022.10.31
